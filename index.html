@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi">
+<head>
+	<title>Weather Forecast - Your Location</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Imind Weather">
+	<meta name="keywords" content="weather, imind">
+	<meta name="author" content="Dinh Hong Ngoc">
+	<link rel="shortcut icon" href="favicon.ico"> 
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/preloader.css">
+    <link rel="stylesheet" type="text/css" href="css/loading-effect.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div id="preloader">
+    <ul id="status">
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    	<li></li>
+    </ul>
+    <div id="preloader-loading">Loading</div>
+</div>
+<div class="la-anim-6">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="500" viewBox="0 0 500 500">
+      <path id="la-anim-6-border" transform="translate(250, 250)" d="M 0 0 v -250 A 250 250 1 0 1 0 -250 z"></path>
+      <path id="la-anim-6-loader" transform="translate(250, 250) scale(0.9)" d="M 0 0 v -250 A 250 250 1 0 1 0 -250 z"></path>
+    </svg>
+</div>
+<div class="container">
+<header class="clearfix">
+	<h2>Today - Your location</h2>
+	<div class="support-note">
+		<span class="note-ie">Sorry, only modern browsers.</span>
+	</div>
+</header>
+<section class="main">
+</section>
+</div>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/loading-effect.js"></script>
+<script type="text/javascript" src="js/weather.js?v=1.0"></script>
+<script type="text/javascript">
+    $(function() {
+        getLocation();
+    })
+</script>
+</body>
+</html>
